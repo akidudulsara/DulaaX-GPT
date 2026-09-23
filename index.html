@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>DulaaX GPT</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- =========================
+         MOBILE MENU
+         ========================= -->
+
+    <button
+        id="mobileMenuBtn"
+        class="mobile-menu-btn"
+        type="button"
+        aria-label="Open menu"
+    >
+        ☰
+    </button>
+
+
+    <div
+        id="sidebarOverlay"
+        class="sidebar-overlay"
+    ></div>
+
+
+    <!-- =========================
+         ACCOUNT SCREEN
+         ========================= -->
+
+    <div
+        id="authScreen"
+        class="auth-screen"
+    >
+
+        <div class="auth-box">
+
+            <img
+                src="logo.png"
+                alt="DulaaX GPT"
+                class="auth-logo"
+            >
+
+
+            <h1>
+                DulaaX GPT
+            </h1>
+
+
+            <p id="authTitle">
+                Create your account
+            </p>
+
+
+            <form id="authForm">
+
+                <input
+                    id="nameInput"
+                    type="text"
+                    placeholder="Your name"
+                    autocomplete="name"
+                    required
+                >
+
+
+                <input
+                    id="emailInput"
+                    type="email"
+                    placeholder="Email"
+                    autocomplete="email"
+                    required
+                >
+
+
+                <input
+                    id="passwordInput"
+                    type="password"
+                    placeholder="Password"
+                    autocomplete="current-password"
+                    required
+                >
+
+
+                <button
+                    type="submit"
+                    id="authBtn"
+                >
+                    Sign Up
+                </button>
+
+            </form>
+
+
+            <p class="auth-switch">
+
+                <span id="switchText">
+                    Already have an account?
+                </span>
+
+
+                <button
+                    type="button"
+                    id="switchAuth"
+                >
+                    Login
+                </button>
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================
+         MAIN APP
+         ========================= -->
+
+    <div class="app">
+
+
+        <!-- =========================
+             SIDEBAR
+             ========================= -->
+
+        <aside class="sidebar">
+
+
+            <!-- BRAND -->
+
+            <div class="sidebar-brand">
+
+                <img
+                    src="logo.png"
+                    alt="DulaaX GPT"
+                >
+
+
+                <span>
+                    DulaaX GPT
+                </span>
+
+            </div>
+
+
+
+            <!-- DARK MODE -->
+
+            <button
+                id="darkModeBtn"
+                class="dark-mode-btn"
+                type="button"
+                title="Dark Mode"
+            >
+                🌙
+            </button>
+
+
+
+            <!-- NEW CHAT -->
+
+            <button
+                id="newChat"
+                type="button"
+            >
+                ＋ New Chat
+            </button>
+
+
+
+            <!-- HISTORY TITLE -->
+
+            <div class="history-title">
+                Recent Chats
+            </div>
+
+
+
+            <!-- CHAT HISTORY -->
+
+            <div id="chatHistory"></div>
+
+
+
+            <!-- =========================
+                 USER PROFILE
+                 ========================= -->
+
+            <div class="user-profile">
+
+                <div class="user-info">
+
+                    <div class="profile-pic">
+                        👤
+                    </div>
+
+
+                    <div id="userName">
+                        Guest
+                    </div>
+
+                </div>
+
+
+                <button
+                    id="logoutBtn"
+                    type="button"
+                >
+                    Logout
+                </button>
+
+            </div>
+
+
+        </aside>
+
+
+
+        <!-- =========================
+             HEADER
+             ========================= -->
+
+        <header class="header">
+
+
+            <div class="logo">
+                🤖 DulaaX GPT
+            </div>
+
+
+            <button
+                id="newChatHeader"
+                type="button"
+            >
+                ＋ New Chat
+            </button>
+
+
+        </header>
+
+
+
+        <!-- =========================
+             CHAT
+             ========================= -->
+
+        <main
+            id="chatBox"
+            class="chat-box"
+        >
+
+            <div class="welcome">
+
+                <h1>
+                    Welcome to DulaaX GPT
+                </h1>
+
+
+                <p>
+                    Your personal AI assistant 🚀
+                </p>
+
+            </div>
+
+        </main>
+
+
+
+        <!-- =========================
+             INPUT
+             ========================= -->
+
+        <div class="input-area">
+
+
+            <input
+                id="userInput"
+                type="text"
+                placeholder="Message DulaaX GPT..."
+                autocomplete="off"
+            >
+
+
+            <button
+                id="sendBtn"
+                type="button"
+                aria-label="Send message"
+            >
+                ➤
+            </button>
+
+        </div>
+
+
+
+        <!-- =========================
+             FOOTER
+             ========================= -->
+
+        <div class="footer">
+            DulaaX GPT • Your AI Assistant
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =========================
+         JAVASCRIPT
+         ========================= -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
