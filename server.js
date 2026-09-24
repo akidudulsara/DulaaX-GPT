@@ -5,7 +5,7 @@ const crypto = require("crypto");
 
 const Groq = require("groq-sdk");
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 
 // =========================
